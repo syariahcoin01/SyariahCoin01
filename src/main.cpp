@@ -2018,7 +2018,7 @@ bool LoadBlockIndex(bool fAllowNew)
   	vMerkleTree: ef7e256a2c */
         
         // Genesis block
-        const char* pszTimestamp = "SyariahCoin01 First day";
+        const char* pszTimestamp = "SyariahCoin01_1st";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
