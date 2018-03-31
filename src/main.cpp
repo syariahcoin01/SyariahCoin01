@@ -2018,7 +2018,7 @@ bool LoadBlockIndex(bool fAllowNew)
   	vMerkleTree: ef7e256a2c */
         
         // Genesis block
-        const char* pszTimestamp = "SyariahCoin01 First day";
+        const char* pszTimestamp = "SyariahCoin01_1st";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2044,7 +2044,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("%s\n", block.GetHash().ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0xef7e256a2cf2d38576225af2775a1e8160928a0c78526ab3615615d1ff16870e"));
+        assert(block.hashMerkleRoot == uint256("0x18cebc963c6bd683bd7e599bfe77c9607f835f5d3977e9a37a3066ecab3a1847"));
 
         // If genesis block hash does not match, then generate new genesis hash.
         if (true && block.GetHash() != hashGenesisBlock)
